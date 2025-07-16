@@ -39,9 +39,9 @@ Deploy and secure a file upload system on Azure using Blob Storage, Key Vault, N
 - [x] Assigned RBAC roles (Reader/Contributor)
 - [x] Restricted blob access using IAM + KV
 
-### Project Structure
-- [x] Organized `infra/notes` and `infra/screenshots`
-- [x] Added architecture diagram and supporting docs
+
+
+
 
 ---
 
@@ -65,6 +65,11 @@ secure-file-upload/
 
 ---
 
+## 🗺️ Architecture Diagram
+
+![Architecture Diagram](infra/screenshots/architecture-diagram.png)
+
+--- 
 ## 📸 Screenshots
 
 All screenshots are located in [`infra/screenshots/`](infra/screenshots/), including:
@@ -74,6 +79,7 @@ All screenshots are located in [`infra/screenshots/`](infra/screenshots/), inclu
 - Blob container + uploads  
 - Key Vault secret  
 - RBAC user role config
+- Architecture diagram
 
 ---
 
@@ -85,6 +91,15 @@ All screenshots are located in [`infra/screenshots/`](infra/screenshots/), inclu
 
 ---
 
+## 🧹 Cleanup
+To avoid Azure charges, delete all resources:
+```
+az group delete --name resource-group-name --yes
+```
+- Replace resource-group-name with your Resource Group Name.
+- --yes skips the confirmation prompt so it deletes right away.
+
+---
 ## 📚 References
 
 - [Azure Storage Blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/)
