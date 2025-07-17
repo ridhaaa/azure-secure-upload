@@ -24,6 +24,8 @@ This document outlines the steps to deploy a secure Linux Virtual Machine on Azu
 | **Key Name**         | `reedokey.pem`           |
 | **Public IP**        | Assigned                 |
 
+![VM Overview](../screenshots/vm-portal.png)
+
 ---
 
 ## 🌐 3. Network Configuration
@@ -58,6 +60,7 @@ ssh -i "path/to/reedokey.pem" reedo@<vm-public-ip>
 ```
 
 Successfully logged into the VM:
+
 ![SSH Access](../screenshots/ssh-access.png)
 
 
