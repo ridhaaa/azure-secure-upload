@@ -6,13 +6,13 @@ This document contains the role assignment process to restrict and manage access
 
 ### Why RBAC?
 
-Azure RBAC allows fine-grained access control to Azure resources. Instead of sharing access keys, users are granted *just enough* access based on their role, improving security and auditability.
+Azure RBAC allows access control to Azure resources. Instead of sharing access keys, users are granted *just enough* access based on their role, improving security.
 
 ---
 
 ## 📦 Storage Access: Blob Data Contributor
 
-We assigned the `Storage Blob Data Contributor` role to our user on the **Storage Account** so they can upload/download files but **not manage the account itself**.
+Assigned the `Storage Blob Data Contributor` role to the user on the **Storage Account** so they can upload/download files but **not manage the account itself**.
 
 | Setting        | Value                         |
 |----------------|-------------------------------|
