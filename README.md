@@ -6,10 +6,9 @@ Deploy and secure a file upload system on Azure using Blob Storage, Key Vault, N
 
 ## 📌 Project Overview
 
-- Deploy core infrastructure: VM, VNet, NSG, Storage
-- Secure access with RBAC and Azure Key Vault
-- Test manual file uploads/downloads
-- Structure the project for clarity and reusability
+- Provision core infrastructure: VM, VNet, NSG, Storage
+- Apply secure access using IAM and Azure Key Vault
+- Manually upload and download test files to Blob
 
 ---
 
@@ -19,7 +18,7 @@ Deploy and secure a file upload system on Azure using Blob Storage, Key Vault, N
 - Azure Blob Storage
 - Azure Key Vault
 - NSG, VNet, IAM (RBAC)
-- GitHub (VCS)
+- GitHub (Version Control)
 
 ---
 
@@ -32,16 +31,12 @@ Deploy and secure a file upload system on Azure using Blob Storage, Key Vault, N
 
 ### Storage & Upload
 - [x] Created Storage Account + Blob Container
-- [x] Manually uploaded and downloaded test files
+- [x]  Uploaded and downloaded test files manually
 
 ### Security
 - [x] Created Key Vault and added secret
 - [x] Assigned RBAC roles (Reader/Contributor)
-- [x] Restricted blob access using IAM + KV
-
-
-
-
+- [x] Restricted blob access using IAM + Key Vault
 
 ---
 
@@ -77,15 +72,15 @@ All screenshots are located in [`infra/screenshots/`](infra/screenshots/), inclu
 - NSG rules  
 - Blob container + uploads  
 - Key Vault secret  
-- RBAC user role config
+- RBAC user role configuration
 
 ---
 
 ## 🧠 Learnings
 
 - Applied secure access control using Azure RBAC + Key Vault
-- Understood VNet, NSG, and IAM role configurations
-- Gained practical experience with Azure CLI + Portal workflows
+- Understanding of VNet, NSG, and IAM role configurations
+- Obtained practical experience with Azure CLI + Portal workflows
 
 ---
 
@@ -94,7 +89,7 @@ To avoid Azure charges, delete all resources:
 ```
 az group delete --name resource-group-name --yes
 ```
-- Replace resource-group-name with your Resource Group Name.
+- ⚠️ Replace resource-group-name with your Resource Group Name.
 - --yes skips the confirmation prompt so it deletes right away.
 
 ---
