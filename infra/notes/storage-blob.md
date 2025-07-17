@@ -41,9 +41,13 @@ To enforce secure and identity-based access, the following settings were configu
 | Public Access                                | Disabled      |
 | Default to Microsoft Entra Authorization     | Enabled       |
 
-![Storage Config](../screenshots/storage-access-config.png)
 
 > Ensures only encrypted connections are allowed and disables anonymous access.  
 > Enforces RBAC-only access in the Azure portal (no keys/SAS unless explicitly allowed).
+
+
+![Storage Config](../screenshots/storage-access-config.png)
+
+
 
 
