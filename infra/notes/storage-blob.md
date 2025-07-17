@@ -10,7 +10,7 @@
 
 ## 📁 2. Blob Container Creation
 
-- Container Name: `secure-container`
+- Container Name: `uploads`
 - Public access level: **Private (no anonymous access)**
 
 ![Blob Container](../screenshots/blob-container-created.png)
@@ -19,8 +19,8 @@
 
 ## 📤 3. File Upload & Download
 
-Uploaded a test `.txt` file inside the blob container:  
-![Test File](../screenshots/test_file.txt)
+Uploaded a ![Test File](../screenshots/test_file.txt) inside the blob container.
+
 ![Blob Upload](../screenshots/blob-upload.png)
 
 Downloaded back to verify data consistency.
@@ -34,6 +34,7 @@ Downloaded back to verify data consistency.
 
 - Key Vault Name: `secure-upload-kv`
 - Added secret: `storage-access-key`
+  
 ![Key Vault Secret](../screenshots/keyvault-secret.png)
 
 
