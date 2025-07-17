@@ -24,6 +24,15 @@ Assigned the `Storage Blob Data Contributor` role to the user on the **Storage A
 ![Role assigning](../screenshots/rbac-role-assignment.png)
 ![Blob IAM Role](../screenshots/blob-iam.png)
 
+---
+
+### 🔒 Access Verification Test
+
+To verify the RBAC enforcement, the storage account was accessed using another user account **without any role assigned**.
+
+And the access was denied:
+
+![Access Denied Test](../screenshots/rbac-access-denied.png)
 
 ---
 
