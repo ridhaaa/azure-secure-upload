@@ -1,6 +1,6 @@
 # 🐧 Linux VM Deployment – Azure Secure File Upload
 
-This document outlines the steps to deploy a secure Linux Virtual Machine on Azure using the Portal and configure network security + SSH access. This VM forms the base for the Secure File Upload System.
+This document outlines the steps to deploy a secure Linux Virtual Machine on Azure using the Portal and configure network security + SSH access. 
 
 ---
 
