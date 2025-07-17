@@ -29,16 +29,20 @@ Verified the uploaded file by downloading it back.
 
 ![Blob Download](../screenshots/blob-download.png)
 
+---
+
+## 🔒 Blob Access Control
+
+- The storage container (`uploads`) is set to **Private – No anonymous access**.
+- **Public access is disabled** at both the container and account level.
+- **Access to upload/download blobs is restricted using Azure RBAC**, not shared keys.
+- My user is assigned the `Storage Blob Data Contributor` role.
+- This ensures only explicitly authorized users can interact with the container.
+
+📸 [RBAC Assignment Screenshot](../screenshots/blob-iam.png)
 
 ---
 
-## 🔑 4. Azure Key Vault (Securing Access)
-
-- **Key Vault Name**: `secure-upload-kv`
-- **Secret Name**: `storage-access-key`
-- 📝 **Note**: The secret currently stored is a **dummy placeholder** used to simulate secure access control.  
-  
-![Key Vault Secret](../screenshots/keyvault-secret.png)
 
 
 
