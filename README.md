@@ -74,12 +74,12 @@ secure-file-upload/
 
 All screenshots are located in [`infra/screenshots/`](infra/screenshots/), including:
 
-- VM overview  
+- ![VM Overview](../screenshots/vm-portal.png)
+- ![SSH Access](../screenshots/ssh-access.png)
 - NSG rules  
 - Blob container + uploads  
 - Key Vault secret  
 - RBAC user role config
-- Architecture diagram
 
 ---
 
