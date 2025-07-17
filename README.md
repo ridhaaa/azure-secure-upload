@@ -53,9 +53,7 @@ secure-file-upload/
 ├── infra/
 │   ├── notes/
 │   │   ├── linux-vm.md
-│   │   ├── vnet-nsg.md
 │   │   ├── storage-blob.md
-│   │   ├── storage-upload-download.md
 │   │   ├── keyvault.md
 │   │   └── rbac.md
 │   └── screenshots/
@@ -74,8 +72,8 @@ secure-file-upload/
 
 All screenshots are located in [`infra/screenshots/`](infra/screenshots/), including:
 
-- ![VM Overview](../screenshots/vm-portal.png)
-- ![SSH Access](../screenshots/ssh-access.png)
+- VM Overview
+- SSH Access
 - NSG rules  
 - Blob container + uploads  
 - Key Vault secret  
