@@ -14,7 +14,7 @@ This document contains the setup and usage of Azure Key Vault in the Secure File
 | **Firewall**     | Enabled (IP-restricted)|
 | **RBAC**         | Enabled                |
 
-![Key Vault Overview](infra/screenshots/keyvault-overview.png)
+![Key Vault Overview](../screenshots/keyvault-overview.png)
 
 ---
 
