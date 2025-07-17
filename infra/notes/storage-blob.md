@@ -39,7 +39,7 @@ Verified the uploaded file by downloading it back.
 - My user is assigned the `Storage Blob Data Contributor` role.
 - This ensures only explicitly authorized users can interact with the container.
 
-📸 [RBAC Assignment Screenshot](../screenshots/blob-iam.png)
+![RBAC Assignment Screenshot](../screenshots/blob-iam.png)
 
 ---
 
