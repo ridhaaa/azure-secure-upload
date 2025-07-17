@@ -1,6 +1,6 @@
-# 🐧 Linux VM Deployment – Azure Secure Upload Project
+# 🐧 Linux VM Deployment – Azure Secure File Upload
 
-This document covers the steps to deploy a secure Linux VM on Azure using the Portal and configure secure SSH access for later monitoring and Terraform use.
+This document outlines the steps to deploy a secure Linux Virtual Machine on Azure using the Portal and configure network security + SSH access. This VM forms the base for the Secure File Upload System.
 
 ---
 
@@ -34,27 +34,27 @@ This document covers the steps to deploy a secure Linux VM on Azure using the Po
 | Subnet      | `web-subnet`        |
 | NSG         | `secure-nsg`        |
 | NSG Rule    | `Allow-SSH-MyIP`    |
-| Source      | My Public IP (`x.x.x.x`) |
+| Source      | Public IP (`x.x.x.x`) |
 | Port        | TCP 22              |
 | Priority    | 100                 |
 | Action      | Allow               |
 
 - NSG is associated with the `web-subnet`
-- Inbound rule only allows SSH (port 22) from a **specific IP**
-- Ensures the VM is **not open to the public**
+- Inbound rule only allows SSH (port 22) from **your public IP**
+- This ensures the VM is **not open to the public** and reduces unauthorized access.
 
 ![NSG Rule](../screenshots/nsg-ssh-rule.png)
-
+![Subnet Association](../screenshots/nsg-subnet-association.png)
 
 ---
 ## 🔐 SSH Key & Access
 
-- SSH key generated locally in Ed25519 format (`reedokey.pem`)
-- Key is stored securely on the local machine
+- SSH key generated in Ed25519 format (`reedokey.pem`)
+- Key is stored on the local machine
 - SSH command used:
 
 ```bash
-ssh -i "path/to/reedokey.pem" reedo@<your-vm-public-ip>
+ssh -i "path/to/reedokey.pem" reedo@<vm-public-ip>
 ```
 
 Successfully logged into the VM:
