@@ -21,14 +21,13 @@ This document contains the setup and usage of Azure Key Vault in the Secure File
 ## 🔐 2. Key Vault Configuration
 
 ### ✅ Access Configuration
-- **Access Control Mode**: Role-Based Access Control (RBAC)
 
 ![Key Vault Config](../screenshots/keyvault-access-config.png)
 
 ### ✅ Firewall Rules
 - Enabled firewall and added **client public IP** to the allowed list
 - Verified access denial from unapproved account:
-- 
+  
 ![Access Denied](../screenshots/keyvault-access-denied.png)
 
 ---
@@ -43,7 +42,7 @@ This document contains the setup and usage of Azure Key Vault in the Secure File
 
 ## 🔐 Key Vault Secret: Storage Key
 
-A dummy secret was created to simulate storing a storage account key securely.
+A dummy secret was created to test storing a storage account key securely.
 
 - **Secret Name**: `storage-access-key`
 - **Status**: Enabled
