@@ -31,17 +31,7 @@ Verified the uploaded file by downloading it back.
 
 ---
 
-## 🔒 Blob Access Control
 
-- The storage container (`uploads`) is set to **Private – No anonymous access**.
-- **Public access is disabled** at both the container and account level.
-- **Access to upload/download blobs is restricted using Azure RBAC**, not shared keys.
-- My user is assigned the `Storage Blob Data Contributor` role.
-- This ensures only explicitly authorized users can interact with the container.
-
-![RBAC Assignment Screenshot](../screenshots/blob-iam.png)
-
----
 
 
 
