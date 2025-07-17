@@ -23,13 +23,13 @@ This document contains the setup and usage of Azure Key Vault in the Secure File
 ### ✅ Access Configuration
 - **Access Control Mode**: Role-Based Access Control (RBAC)
 
-![Key Vault Config](infra/screenshots/keyvault-access-config.png)
+![Key Vault Config](../screenshots/keyvault-access-config.png)
 
 ### ✅ Firewall Rules
 - Enabled firewall and added **client public IP** to the allowed list
 - Verified access denial from unapproved account:
 - 
-![Access Denied](infra/screenshots/keyvault-access-denied.png)
+![Access Denied](../screenshots/keyvault-access-denied.png)
 
 ---
 
@@ -37,7 +37,7 @@ This document contains the setup and usage of Azure Key Vault in the Secure File
 
 ### Created Secret:
 
-![Access Denied](infra/screenshots/keyvault-secret.png)
+![Access Denied](../screenshots/keyvault-secret.png)
 
 ---
 
